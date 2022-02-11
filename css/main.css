@@ -1,0 +1,56 @@
+:root{
+--azulRey : #1B21AF;
+--azul : #094A63;
+--verdeCobalto : #1F5E5A;
+--terraVerde : #8C9E94;
+--azulCeruleo : #6B879F;
+--morado :#9F6DB7;
+--guinda: #7F1730;
+--rojo:#A62532;
+--naranja: #A14024;
+--dorado:#B4742A;
+}
+
+h1{
+font-family: 'Raleway', sans-serif;
+font-size: 1em;
+color: white;
+
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+background-color: var(--azulRey);
+background-image: url(/Imagenes/serpienteBg.svg) ;
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
+}
+
+.contenidoInfografia{
+height: max-content;
+}
+
+
+
+.footer{
+display: flex;
+align-items: flex-end; 
+justify-content: center;
+padding: 5%;
+}
+
+.footer__image{
+width: 100px;
+display: flex;
+margin: auto;
+    
+}
