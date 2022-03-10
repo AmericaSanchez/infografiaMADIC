@@ -12,19 +12,40 @@
 }
 
 h1{
-font-family: 'Raleway', sans-serif;
-font-size: 1em;
-color: white;
-
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px !important;
+    color: white;
+    font-weight: bold !important;
+    line-height: 100px !important;
 }
 
 h2{
     font-family: 'Raleway', sans-serif;
+    font-size: 30px !important;
     color: white;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px !important;
+    color: white;
+}
+
+.h3_bold{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px !important;
+    color: white;
+    font-weight: bold !important;
 }
 
 p{
     font-family: 'Merriweather Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.p_bold{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold !important;
 }
 
 body{
@@ -39,7 +60,10 @@ height: auto;
 height: max-content;
 }
 
-
+a{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
 
 .footer{
 display: flex;
