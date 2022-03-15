@@ -11,22 +11,6 @@
 --dorado:#B4742A;
 }
 
-h1{
-font-family: 'Raleway', sans-serif;
-font-size: 1em;
-color: white;
-
-}
-
-h2{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-p{
-    font-family: 'Merriweather Sans', sans-serif;
-    color:white;
-}
 
 body{
 /* background-color: var(--azulRey);
@@ -53,17 +37,17 @@ margin: auto;
 }
 
 .infografia{
-        display: flex;
-          align-items: flex-start;
-        height: 450px;
+    display: flex;
+    align-items: flex-start;
       }
 
-.slide1__monitas{
-    width: 30%;
+.slide1__image{
+    width: 40%;
     margin: auto;
+    padding: 5%;
 }
 
-.card__monitas{
+.slide1__card{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -71,10 +55,27 @@ margin: auto;
     word-wrap: break-word;
     border-radius: 0.25rem;
     text-align: center;
+    padding-top: 5%;
 }
 
-.icons{
+.slide1__icons{
     display: flex; 
-    justify-content: space-around;
-    color: white
+    justify-content: space-evenly;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.slide1__biografias{
+    display: flex;
+}
+
+.slide1__texto{
+margin-top: 5%;
+}
+
+
+*{
+font-family: 'Raleway', sans-serif;
+color: white;
 }
