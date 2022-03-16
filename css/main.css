@@ -37,9 +37,10 @@ margin: auto;
 }
 
 .infografia{
-    display: flex;
+   
     align-items: flex-start;
-      }
+    display: block;
+}
 
 .slide1__image{
     width: 40%;
@@ -73,6 +74,11 @@ margin: auto;
 .slide1__texto{
 margin-top: 5%;
 }
+
+.slide{
+    display: block;
+}
+
 
 
 *{
