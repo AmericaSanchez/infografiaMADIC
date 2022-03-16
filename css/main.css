@@ -11,39 +11,21 @@
 --dorado:#B4742A;
 }
 
-h1{
-font-family: 'Raleway', sans-serif;
-font-size: 1em;
-color: white;
-
-}
-
-h2{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-p{
-    font-family: 'Merriweather Sans', sans-serif;
-}
 
 body{
-background-color: var(--azulRey);
+/* background-color: var(--azulRey);
 background-image: url(/Imagenes/serpienteBg.svg) ;
 background-repeat: no-repeat;
 background-size: cover;
-height: auto;
+height: auto; */
+height: 10000px;
+background: linear-gradient(to bottom, #1B21AF 10%,#094A63 20%, #1F5E5A 30%,#8C9E94 40%,#6B879F 50%,#9F6DB7 60%,#7F1730 70%,#A62532 80%,#A14024 90%,#B4742A 100%);
+
 }
 
-.contenidoInfografia{
-height: max-content;
-}
-
-
-
-.footer{
+footer{
 display: flex;
-align-items: flex-end; 
+align-items: flex-end;
 justify-content: center;
 padding: 5%;
 }
@@ -52,5 +34,54 @@ padding: 5%;
 width: 100px;
 display: flex;
 margin: auto;
-    
+}
+
+.infografia{
+   
+    align-items: flex-start;
+    display: block;
+}
+
+.slide1__image{
+    width: 40%;
+    margin: auto;
+    padding: 5%;
+}
+
+.slide1__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.slide1__icons{
+    display: flex; 
+    justify-content: space-evenly;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.slide1__biografias{
+    display: flex;
+}
+
+.slide1__texto{
+margin-top: 5%;
+}
+
+.slide{
+    display: block;
+}
+
+
+
+*{
+font-family: 'Raleway', sans-serif;
+color: white;
 }
