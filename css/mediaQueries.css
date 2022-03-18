@@ -1,0 +1,27 @@
+:root{
+--azulRey : #1B21AF;
+--azul : #094A63;
+--verdeCobalto : #1F5E5A;
+--terraVerde : #8C9E94;
+--azulCeruleo : #6B879F;
+--morado :#9F6DB7;
+--guinda: #7F1730;
+--rojo:#A62532;
+--naranja: #A14024;
+--dorado:#B4742A;
+}
+
+
+@media screen and (max-width: 767px) {
+    h5{
+        text-align: center; 
+        margin: auto; 
+        padding: 5%;
+    }
+
+.slide2__img{
+ padding: 5%;
+}
+
+
+}
