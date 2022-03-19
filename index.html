@@ -24,6 +24,27 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+  <style>
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100% !important;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -153,7 +174,7 @@
     <!-- Slide 3: Metodologías -->
     <section class="slide3" style="margin-top: 10%;">
       <div>
-        <h6>Fijamos nuestro destino en crear un sistema de <strong><u><a data-bs-toggle=" modal"
+        <h6>Fijamos nuestro destino en crear un sistema de <strong><u><a data-bs-toggle="modal"
                 data-bs-target="#modalMuseografia" class="modalTerminos">museografía interactiva</a></u></strong> que
           acompañara a
           las personas a conocer la vida cotidiana de la artista en México.
@@ -239,7 +260,17 @@
 
     <!-- Slide 4: El viaje -->
     <section class="slide4" style="margin-top: 10%;">
-
+      <div class="row">
+        <div class="col col-lg-6 col-12">
+          <h5>
+            Nuestro viaje no solo nos llevo a través de libros, también tuvimos que recorrer la república mexicana para
+            conocer los museos interactivos, casas museo y no me acuerdo de la otra categoría del país.
+          </h5>
+        </div>
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/mapa.svg">
+        </div>
+      </div>
       <footer">
         <img class="footer__image" src="Imagenes/monitas.svg" />
         </footer>
@@ -273,9 +304,35 @@
 
     <!-- Slide 8: ICR -->
     <section class="slide8" style="margin-top: 10%;">
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+      <div class="row">
+        <div class="col col-lg-3 col-6">
+          <h5>Todo esté viaje lo plasmamos en nuestra idónea comunicación de resultados, un libro mágico con el cual
+            participamos en el Premio Mexicano del Diseño y ganó una mención honorífica en la categoría de mejor tesis
+            de maestría.
+            <br> <br>
+            Si tienes curiosidad puedes leerlo aquí
+          </h5>
+        </div>
+        <div class="col col-lg-3 col-6">
+          <img class="slide8__img" src="Imagenes/icrPremio.png">
+        </div>
+        <div class="col col-lg-6 col-12" style="margin-bottom: 10%;">
+          <a class="modalTerminos" style="text-decoration: none;"
+            href="https://www.yumpu.com/es/document/view/65859459/alquimia-tecnologia-y-vida-cotidiana-museografia-interactiva-para-la-casa-estudio-leonora-carrington"
+            title="Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington"
+            target="_blank">
+            Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington</a>
+          <!-- <iframe width="940px" height="737px" src="https://www.yumpu.com/es/embed/view/qWhicbn0GzmOP8UQ" frameborder="0" allowfullscreen="true"></iframe> -->
+          <div class='embed-container' data-page-width='494' data-page-height='640' id='ypembedcontainer'>
+            <iframe src="https://www.yumpu.com/es/embed/view/PHxAlJQgaefzkZhG" frameborder="0" allowfullscreen="true"
+              allowtransparency="true"></iframe>
+          </div>
+          <script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js'></script>
+        </div>
+
+        <footer">
+          <img class="footer__image" src="Imagenes/monitas.svg" />
+          </footer>
     </section>
     <!-- Slide 8: ICR -->
 
@@ -288,14 +345,14 @@
           DESIGN Korea & Latin America Research Exchange”
         </h6>
       </div>
-<div class="row">
-<div class="col col-lg-6 col-12"> 
- <img class="slide3__row_img" src="Imagenes/presentaciones1.svg"> 
-</div>
-<div class="col col-lg-6 col-12"> 
-  <img src="Imagenes/presentaciones2.jpg"> 
- </div>
-</div>
+      <div class="row">
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/presentaciones1.svg">
+        </div>
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/presentaciones2.jpg">
+        </div>
+      </div>
 
       <footer">
         <img class="footer__image" src="Imagenes/monitas.svg" />
