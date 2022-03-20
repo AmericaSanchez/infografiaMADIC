@@ -13,16 +13,31 @@
 
 h1{
 
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px !important;
+    color: white;
+    font-weight: bold !important;
+    line-height: 100px !important;
 }
 
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px !important;
+    color: white;
+}
 
-h2{
-
-
+.h3_bold{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px !important;
+    color: white;
+    font-weight: bold !important;
 }
 
 h4{
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px !important;
+    color: white;
 }
 
 h5{
@@ -30,6 +45,17 @@ h5{
     margin: auto;
     padding: 2%
 }
+
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.p_bold{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold !important;
+}
+
 
 
 body{
@@ -43,7 +69,12 @@ background: linear-gradient(to bottom, #1B21AF 10%,#094A63 20%, #1F5E5A 30%,#8C9
 
 }
 
-footer{
+a{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.footer{
 display: flex;
 align-items: flex-end;
 justify-content: center;
