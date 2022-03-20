@@ -38,7 +38,6 @@ background-image: url(/Imagenes/serpienteBg.svg) ;
 background-repeat: no-repeat;
 background-size: cover;
 height: auto; */
-height: 6500px;
 background: linear-gradient(to bottom, #1B21AF 10%,#094A63 20%, #1F5E5A 30%,#8C9E94 40%,#6B879F 50%,#9F6DB7 60%,#7F1730 70%,#A62532 80%,#A14024 90%,#B4742A 100%);
 
 }
@@ -154,6 +153,20 @@ align-items: center;
 
 .slide8__img{
      width: -webkit-fill-available;  
+}
+
+.slide9__img{
+    width: 45%;
+    margin: 3% 0 3% 0;
+}
+
+.slide9__container{
+    align-items: center;
+    text-align: center;
+}
+
+.slide9__container_carrousel{
+ display: inline-flex;   
 }
 
 
