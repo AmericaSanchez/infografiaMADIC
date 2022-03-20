@@ -135,7 +135,7 @@
         <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
       </div>
 
-      <!-- Modal -->
+      <!-- Modal Que es interdisciplina-->
       <div class="modal fade" id="modalInterdisciplina" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -147,7 +147,7 @@
             </div>
             <div class="modal-body" style="background-color: #094A63;">
 
-              <div class="container container__question">
+              <div class="container container__question row">
                 <div class="col-lg-2 col-sm-6 container__question_icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                     class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
@@ -169,7 +169,7 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!-- Modal Que es interdisciplina-->
 
     </section>
     <!-- Slide 2: Introducción -->
@@ -195,7 +195,7 @@
       </div>
       <div class="row">
         <div class="slide3__row_element col col-12 col-lg-4">
-          <a>
+          <a data-bs-toggle="modal" data-bs-target="#modalMetodologias1" class="modalTerminos">
             <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
             <h5>
               Metodología interdisciplinaria de investigación.
@@ -204,7 +204,7 @@
         </div>
 
         <div class="slide3__row_element col col-12 col-lg-4">
-          <a>
+          <a  data-bs-toggle="modal" data-bs-target="#modalMetodologias2" class="modalTerminos">
             <img class="slide3__row_img" src="Imagenes/metodologias2.svg">
             <h5>
               Metodología de desarrollo de museografía interactiva.
@@ -213,7 +213,7 @@
         </div>
 
         <div class="slide3__row_element col col-12 col-lg-4">
-          <a>
+          <a data-bs-toggle="modal" data-bs-target="#modalMetodologias3" class="modalTerminos">
             <img class="slide3__row_img" src="Imagenes/metodologias3.svg">
             <h5>
               Modelo de evaluación MiUX.
@@ -222,45 +222,125 @@
         </div>
       </div>
 
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+      <!-- Modal Museografía interactiva-->
+      <div class="modal fade" id="modalMuseografia" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #1F5E5A;">
+              <h3 class="modal-title" id="exampleModalLabel">Museografía interactiva</h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #1F5E5A;">
 
-        <!-- Modal -->
-        <div class="modal fade" id="modalMuseografia" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #1F5E5A;">
-                <h3 class="modal-title" id="exampleModalLabel">Museografía interactiva</h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #1F5E5A;">
-
-                <div class="container container__question">
-                  <div class="col-lg-2 col-sm-6 container__question_icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                      class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
-                      <path
-                        d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
-                      <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
-                      <path class="rotated"
-                        d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
-                    </svg>
-                  </div>
-                  <div class="col-lg-10 col-sm-6">
-                    <h5>
-                      Recurso didáctico empleado en los museos para favorecer en los visitantes experiencias
-                      significativas, es decir, aspectos lúdicos, de aprendizaje y rituales, a través de la interacción.
-                    </h5>
-                  </div>
+              <div class="container container__question row">
+                <div class="col-lg-2 col-sm-6 container__question_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+                    <path
+                      d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                    <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                    <path class="rotated"
+                      d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                  </svg>
+                </div>
+                <div class="col-lg-10 col-sm-6">
+                  <h5>
+                    Recurso didáctico empleado en los museos para favorecer en los visitantes experiencias
+                    significativas, es decir, aspectos lúdicos, de aprendizaje y rituales, a través de la interacción.
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal -->
+      </div>
+      <!-- Modal Museografía interactiva-->
+
+<!-- Modal Metodología 1-->
+<div class="modal fade" id="modalMetodologias1" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: #1F5E5A;">
+      <h3 class="modal-title" id="exampleModalLabel">Metodología interdisciplinaria de investigación</h3>
+      <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+          class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="modal-body" style="background-color: #1F5E5A;">
+
+      <div class="container container__question row" style="text-align: center;">
+        <div class="col col-12">
+          <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
+        </div>
+        <div class="col col-12">
+          <h6>
+            Para guiar la investigación, se conjuntaron en cuatro etapas los saberes de la museografía interactiva, la ingeniería en desarrollo de software y principios de la magia caos.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal Metodología 1-->
+
+<!-- Modal Metodología 2-->
+<div class="modal fade" id="modalMetodologias2" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: #1F5E5A;">
+      <h3 class="modal-title" id="exampleModalLabel">Metodología interdisciplinaria de investigación</h3>
+      <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+          class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="modal-body" style="background-color: #1F5E5A;">
+
+      <div class="container container__question row" style="text-align: center;">
+        <div class="col col-12">
+          <img class="slide3__row_img" src="Imagenes/metodologias2.svg">
+        </div>
+        <div class="col col-12">
+          <h6>
+            Para guiar la investigación, se conjuntaron en cuatro etapas los saberes de la museografía interactiva, la ingeniería en desarrollo de software y principios de la magia caos.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal Metodología 2-->
+
+<!-- Modal Metodología 3-->
+<div class="modal fade" id="modalMetodologias3" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header" style="background-color: #1F5E5A;">
+      <h3 class="modal-title" id="exampleModalLabel">Metodología interdisciplinaria de investigación</h3>
+      <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+          class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="modal-body" style="background-color: #1F5E5A;">
+
+      <div class="container container__question row" style="text-align: center;">
+        <div class="col col-12">
+          <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
+        </div>
+        <div class="col col-12">
+          <h6>
+            Para guiar la investigación, se conjuntaron en cuatro etapas los saberes de la museografía interactiva, la ingeniería en desarrollo de software y principios de la magia caos.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal Metodología 3-->
     </section>
     <!-- Slide 3: Metodologías -->
 
@@ -278,34 +358,30 @@
           <img class="slide8__img" src="Imagenes/mapa.svg">
         </div>
       </div>
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+
+
     </section>
     <!-- Slide 4: El viaje -->
 
     <!-- Slide 5: Experimentos -->
     <section class="slide5" style="margin-top: 10%;">
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+
+
     </section>
     <!-- Slide 5: Experimentos -->
 
     <!-- Slide 6: Recetario -->
     <section class="slide6" style="margin-top: 10%;">
 
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+
+
     </section>
     <!-- Slide 6: Recetario -->
 
     <!-- Slide 7: Webapp -->
     <section class="slide7" style="margin-top: 10%;">
-      <footer">
-        <img class="footer__image" src="Imagenes/monitas.svg" />
-        </footer>
+
+
     </section>
     <!-- Slide 7: Webapp -->
 
@@ -337,9 +413,9 @@
           <script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js'></script>
         </div>
 
-        <footer">
+        <!-- <footer">
           <img class="footer__image" src="Imagenes/monitas.svg" />
-          </footer>
+          </footer> -->
     </section>
     <!-- Slide 8: ICR -->
 
@@ -366,7 +442,7 @@
         </div>
       </div>
 
-      <!-- Modal -->
+      <!-- Modal presentación 1-->
       <div class="modal fade" id="modalPresentaciones1" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -401,12 +477,9 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!-- Modal presentación 1-->
 
-
-
-
-      <!-- Modal -->
+      <!-- Modal presentación 2-->
       <div class="modal fade" id="modalPresentaciones2" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -441,39 +514,31 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!-- Modal presentación 2-->
+ 
+  </section>
+  <!-- Slide 9: Presentaciones -->
 
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- Modal -->
-  <footer">
-    <img class="footer__image" src="Imagenes/monitas.svg" />
-    </footer>
-    </section>
-    <!-- Slide 9: Presentaciones -->
-
-    <!-- Slide 10: Conclusión -->
-    <section class="slide10 row" style="margin-top: 10%;">
+  <!-- Slide 10: Conclusión -->
+  <section class="slide10 row" style="margin-top: 10%;">
 
 
-      <div class="slide2__img col col-12 col-lg-4">
-        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
-      </div>
-      <div class="slide2__texto col col-12 col-lg-8">
-        <h4>
-          La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
-          Carrington todavía nos acompañan.
-        </h4>
-      </div>
-    </section>
-    <!-- Slide 10: Conclusión -->
-
-
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
     </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10: Conclusión -->
 
-    <!-- <footer">
+
+  </div>
+
+  <!-- <footer">
         <img class="footer__image" src="Imagenes/monitas.svg" />
         </footer> -->
 
