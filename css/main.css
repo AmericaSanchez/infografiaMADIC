@@ -12,17 +12,12 @@
 }
 
 h1{
+
     font-family: 'Raleway', sans-serif;
     font-size: 30px !important;
     color: white;
     font-weight: bold !important;
     line-height: 100px !important;
-}
-
-h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px !important;
-    color: white;
 }
 
 h3{
@@ -38,6 +33,19 @@ h3{
     font-weight: bold !important;
 }
 
+h4{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px !important;
+    color: white;
+}
+
+h5{
+    text-align: center;
+    margin: auto;
+    padding: 2%
+}
+
 p{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: lighter;
@@ -48,16 +56,17 @@ p{
     font-weight: bold !important;
 }
 
+
+
 body{
-background-color: var(--azulRey);
+/* background-color: var(--azulRey);
 background-image: url(/Imagenes/serpienteBg.svg) ;
 background-repeat: no-repeat;
 background-size: cover;
-height: auto;
-}
+height: auto; */
+height: 6500px;
+background: linear-gradient(to bottom, #1B21AF 10%,#094A63 20%, #1F5E5A 30%,#8C9E94 40%,#6B879F 50%,#9F6DB7 60%,#7F1730 70%,#A62532 80%,#A14024 90%,#B4742A 100%);
 
-.contenidoInfografia{
-height: max-content;
 }
 
 a{
@@ -67,7 +76,7 @@ a{
 
 .footer{
 display: flex;
-align-items: flex-end; 
+align-items: flex-end;
 justify-content: center;
 padding: 5%;
 }
@@ -76,5 +85,110 @@ padding: 5%;
 width: 100px;
 display: flex;
 margin: auto;
-    
+}
+
+.infografia{
+
+    align-items: flex-start;
+    display: block;
+}
+
+.slide1__image{
+    width: 40%;
+    margin: auto;
+    padding: 5%;
+}
+
+.slide1__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border-radius: 0.25rem;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.slide1__icons{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.slide1__biografias{
+    display: flex;
+}
+
+.slide1__texto{
+margin-top: 5%;
+}
+
+.slide2__texto{
+display: flex;
+align-items: center;
+
+}
+ .btn-x{
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.modal-dialog{
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px;
+}
+
+.modalTerminos{
+    cursor: pointer;
+    color: white;
+}
+
+.modalTerminos:hover{
+    cursor: pointer;
+    color: white;
+    opacity: 70%;
+}
+
+
+.slide3__row_img{
+    /* width: -webkit-fill-available;  */
+    width:80%;
+    margin: 4% 0 4% 0;
+}
+
+.slide3__row_element{
+    /* text-align: center;
+    display: flex;
+    align-items: flex-end;
+     */
+     display: flex;
+     align-items: center;
+     text-align: center;
+}
+
+.slide8__img{
+     width: -webkit-fill-available;  
+}
+
+
+*{
+font-family: 'Raleway', sans-serif;
+color: white;
 }

@@ -2,33 +2,379 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alquimia cocina y tecnología</title>
-    <script type="text/javascript" src="/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="/main.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;;700&family=Raleway:ital,wght@0,600;1,400&display=swap"
-        rel="stylesheet">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquimia cocina y tecnología</title>
+  <script type="text/javascript" src="/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/questionMark.css" />
+  <link rel="stylesheet" type="text/css" href="/css/mediaQueries.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;;700&family=Raleway:ital,wght@0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <style>
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100% !important;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
 
 </head>
 
 <body>
+  <div class="infografia container">
+    <!-- Portada -->
+    <section class="presentacion container " style="padding-top: 2%;">
+      <div class="row container">
+        <div style="margin-right: 2%; padding-bottom: 5%; display: flex; justify-content: end;">
+          <img src="Imagenes/presentacionImg2.svg" class="col col-lg-3 col-8">
+        </div>
+        <h1 class="col col-12" style="text-align: center; margin: auto">Viaje por la investigación interdisciplinaria
+          para descubrir a Leonora Carrington</h1>
+        <h5> Itzel Alejandra Jiménez Loranca <br />
+          Ollintzin Mary Carmen Rosas Juárez<br />
+          América Fabiola Sánchez León
+        </h5>
+        <img src="Imagenes/presentacionImg1.svg" class="col col-lg-5 col-8">
+      </div>
+    </section>
+    <!-- Portada -->
 
-<div class="contenidoInfografia">
+    <!-- Slide 1: Presentación -->
+    <section class="slide1  container">
+
+      <div class="slide1__texto">
+        <h2><strong>Somos América, Ollin e Itzel</strong></h2>
+        <h4> Y este es el relato de nuestro viaje interdisciplinario por el mundo de Leonora Carrington.</h4>
+      </div>
+
+      <div class="slide1__biografias row">
+
+        <div class="slide1__card col col-lg-4  col-12">
+          <img class="slide1__image" src="Imagenes/monitasAmerica.svg" alt="">
+
+          <h5>América Fabiola Sánchez León</h5>
+          <h6>Sistemas para la Interacción</h6>
+          <div class="slide1__icons">
+            <a href="mailto:americasanchezleon@gmail.com"> <i class="bi bi-envelope"></i></a>
+            <a href="http://www.linkedin.com/in/americascz"><i class="bi bi-linkedin"></i></a>
+            <a href="http://github.com/AmericaSanchez"><i class="bi bi-github"></i></a>
+
+          </div>
+        </div>
+
+        <div class="slide1__card col col-lg-4	col-12">
+          <img class="slide1__image" src="Imagenes/monitasOllin.svg" alt="">
+          <h5>Ollintzin Mary Carmen Rosas Juárez</h5>
+          <h6>Sistemas para la Interacción</h6>
+
+          <div class="slide1__icons">
+            <a href="mailto:Ollintzinrj@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ollintzin-rosas-juarez/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/ollintzinrj"><i class="bi bi-github"></i></a>
+
+          </div>
+        </div>
 
 
+        <div class="slide1__card col col-lg-4 col-12">
+          <img class="slide1__image" src="Imagenes/monitasItzel.svg" alt="">
+          <h5>Itzel Alejandra Jiménez Loranca</h5>
+          <h6>Estrategias en Comunicación</h6>
 
-</div>
+          <div class="slide1__icons">
+            <a href="mailto:jimenezloranca@gmail.com"> <i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/itzel-jimenez-lrnc/"><i class="bi bi-linkedin"></i></a>
 
-    <div class="footer"> 
-        <img  class="footer__image" src="Imagenes/monitas.svg"/>
-    </div>
+
+          </div>
+        </div>
+    </section>
+    <!-- Slide 1: Presentación -->
+
+
+    <!-- Slide 2: Introducción -->
+    <section class="slide2 row" style="margin-top: 10%;">
+      <div class="slide2__texto col col-12 col-lg-8">
+        <h4>
+          Como todo viaje, la <strong><u><a data-bs-toggle="modal" data-bs-target="#modalInterdisciplina"
+                class="modalTerminos">interdisciplina</a></u></strong> implica descubrimiento y
+          transformación. Recuerda a la antigua alquimia, en la que elementos distintos colisionan entre sí para crear
+          armonía.
+        </h4>
+      </div>
+      <div class="slide2__img col col-12 col-lg-4">
+        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalInterdisciplina" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #094A63;">
+              <h3 class="modal-title" id="exampleModalLabel">Interdisciplina</h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #094A63;">
+
+              <div class="container container__question">
+                <div class="col-lg-2 col-sm-6 container__question_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+                    <path
+                      d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                    <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                    <path class="rotated"
+                      d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                  </svg>
+                </div>
+                <div class="col-lg-10 col-sm-6">
+                  <h5>
+                    La interdisciplina es un enfoque en el que se crean metodologías y se entrelazan conceptos para
+                    transformar a las propias ciencias y a la realidad compleja que abordan.
+                  </h5>
+                </div>
+              </div>
+              <!-- Modal -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slide 2: Introducción -->
+
+    <!-- Slide 3: Metodologías -->
+    <section class="slide3" style="margin-top: 10%;">
+      <div>
+        <h6>Fijamos nuestro destino en crear un sistema de <strong><u><a data-bs-toggle="modal"
+                data-bs-target="#modalMuseografia" class="modalTerminos">museografía interactiva</a></u></strong> que
+          acompañara a
+          las personas a conocer la vida cotidiana de la artista en México.
+          Fijamos nuestro destino en crear un sistema de museografía interactiva que acompañara a las personas a conocer
+          la
+          vida cotidiana de la artista en México.
+          <br><br>
+          Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
+          metodología
+          conocida hasta ahora. Por eso, creamos 3 metodologías propias.
+          Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
+          metodología
+          conocida hasta ahora. Por eso, creamos 3 metodologías propias.
+        </h6>
+      </div>
+      <div class="row">
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a>
+            <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
+            <h5>
+              Metodología interdisciplinaria de investigación.
+            </h5>
+          </a>
+        </div>
+
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a>
+            <img class="slide3__row_img" src="Imagenes/metodologias2.svg">
+            <h5>
+              Metodología de desarrollo de museografía interactiva.
+            </h5>
+          </a>
+        </div>
+
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a>
+            <img class="slide3__row_img" src="Imagenes/metodologias3.svg">
+            <h5>
+              Modelo de evaluación MiUX.
+            </h5>
+          </a>
+        </div>
+      </div>
+
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalMuseografia" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: #094A63;">
+                <h3 class="modal-title" id="exampleModalLabel">Museografía interactiva</h3>
+                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                    class="bi bi-x-lg"></i></button>
+              </div>
+              <div class="modal-body" style="background-color: #094A63;">
+
+                <div class="container container__question">
+                  <div class="col-lg-2 col-sm-6 container__question_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                      class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+                      <path
+                        d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                      <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                      <path class="rotated"
+                        d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                    </svg>
+                  </div>
+                  <div class="col-lg-10 col-sm-6">
+                    <h5>
+                      Recurso didáctico empleado en los museos para favorecer en los visitantes experiencias
+                      significativas, es decir, aspectos lúdicos, de aprendizaje y rituales, a través de la interacción.
+                    </h5>
+                  </div>
+                </div>
+                <!-- Modal -->
+    </section>
+    <!-- Slide 3: Metodologías -->
+
+
+    <!-- Slide 4: El viaje -->
+    <section class="slide4" style="margin-top: 10%;">
+      <div class="row">
+        <div class="col col-lg-6 col-12">
+          <h5>
+            Nuestro viaje no solo nos llevo a través de libros, también tuvimos que recorrer la república mexicana para
+            conocer los museos interactivos, casas museo y no me acuerdo de la otra categoría del país.
+          </h5>
+        </div>
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/mapa.svg">
+        </div>
+      </div>
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 4: El viaje -->
+
+    <!-- Slide 5: Experimentos -->
+    <section class="slide5" style="margin-top: 10%;">
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 5: Experimentos -->
+
+    <!-- Slide 6: Recetario -->
+    <section class="slide6" style="margin-top: 10%;">
+
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 6: Recetario -->
+
+    <!-- Slide 7: Webapp -->
+    <section class="slide7" style="margin-top: 10%;">
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 7: Webapp -->
+
+    <!-- Slide 8: ICR -->
+    <section class="slide8" style="margin-top: 10%;">
+      <div class="row">
+        <div class="col col-lg-3 col-6">
+          <h5>Todo esté viaje lo plasmamos en nuestra idónea comunicación de resultados, un libro mágico con el cual
+            participamos en el Premio Mexicano del Diseño y ganó una mención honorífica en la categoría de mejor tesis
+            de maestría.
+            <br> <br>
+            Si tienes curiosidad puedes leerlo aquí
+          </h5>
+        </div>
+        <div class="col col-lg-3 col-6">
+          <img class="slide8__img" src="Imagenes/icrPremio.png">
+        </div>
+        <div class="col col-lg-6 col-12" style="margin-bottom: 10%;">
+          <a class="modalTerminos" style="text-decoration: none;"
+            href="https://www.yumpu.com/es/document/view/65859459/alquimia-tecnologia-y-vida-cotidiana-museografia-interactiva-para-la-casa-estudio-leonora-carrington"
+            title="Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington"
+            target="_blank">
+            Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington</a>
+          <!-- <iframe width="940px" height="737px" src="https://www.yumpu.com/es/embed/view/qWhicbn0GzmOP8UQ" frameborder="0" allowfullscreen="true"></iframe> -->
+          <div class='embed-container' data-page-width='494' data-page-height='640' id='ypembedcontainer'>
+            <iframe src="https://www.yumpu.com/es/embed/view/PHxAlJQgaefzkZhG" frameborder="0" allowfullscreen="true"
+              allowtransparency="true"></iframe>
+          </div>
+          <script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js'></script>
+        </div>
+
+        <footer">
+          <img class="footer__image" src="Imagenes/monitas.svg" />
+          </footer>
+    </section>
+    <!-- Slide 8: ICR -->
+
+    <!-- Slide 9: Presentaciones -->
+    <section class="slide9" style="margin-top: 10%;">
+      <div>
+        <h6>
+          Seguimos contando la historia de este trayecto interdisciplinario por el mundo de la artista en el VII
+          Congreso “Mujeres en la Ciencia, las Humanidades y todas las disciplinas” de la UAM y en el e-book “EXPERIENCE
+          DESIGN Korea & Latin America Research Exchange”
+        </h6>
+      </div>
+      <div class="row">
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/presentaciones1.svg">
+        </div>
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/presentaciones2.jpg">
+        </div>
+      </div>
+
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 9: Presentaciones -->
+
+    <!-- Slide 10: Conclusión -->
+    <section class="slide10" style="margin-top: 10%;">
+      <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer>
+    </section>
+    <!-- Slide 10: Conclusión -->
+
+
+  </div>
+
+  <!-- <footer">
+        <img class="footer__image" src="Imagenes/monitas.svg" />
+        </footer> -->
+
 </body>
 
 </html>
