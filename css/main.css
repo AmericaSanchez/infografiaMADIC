@@ -183,7 +183,7 @@ align-items: center;
 }
 
 .slide8__img{
-     width: -webkit-fill-available;  
+     width: -webkit-fill-available !important;
 }
 
 .slide9__img{
@@ -198,6 +198,16 @@ align-items: center;
 
 .slide9__container_carrousel{
  display: inline-flex;   
+}
+
+.EDGE-115589208{
+    position: relative;
+    width: -webkit-fill-available;  
+    z-index: 0;
+    background-color: #8C9E94 !important;
+    overflow: hidden;
+    text-overflow: clip;
+    
 }
 
 

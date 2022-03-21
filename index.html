@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="/css/questionMark.css" />
   <link rel="stylesheet" type="text/css" href="/css/mediaQueries.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/css/parallax.css" /> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,30 +47,30 @@
     }
   </style>
 
-
 </head>
 
 <body>
-  <div class="infografia container">
+  <div class="infografia container section fixed">
     <!-- Portada -->
-    <section class="presentacion container " style="padding-top: 2%;">
+    <section class="presentacion container fixed" style="padding-top: 2%;">
       <div class="row container">
         <div style="margin-right: 2%; padding-bottom: 5%; display: flex; justify-content: end;">
-          <img src="Imagenes/presentacionImg2.svg" class="col col-lg-3 col-8">
+          <img src="Imagenes/portada/presentacionImg2.svg" class="col col-lg-3 col-8">
         </div>
         <h1 class="col col-12" style="text-align: center; margin: auto">Viaje por la investigación interdisciplinaria
           para descubrir a Leonora Carrington</h1>
-        <h5> Itzel Alejandra Jiménez Loranca <br />
-          Ollintzin Mary Carmen Rosas Juárez<br />
+        <h5>
+          <!-- Itzel Alejandra Jiménez Loranca <br />
+          Ollintzin Mary Carmen Rosas Juárez<br /> -->
           América Fabiola Sánchez León
         </h5>
-        <img src="Imagenes/presentacionImg1.svg" class="col col-lg-5 col-8">
+        <img src="Imagenes/portada/presentacionImg1.svg" class="col col-lg-5 col-8">
       </div>
     </section>
     <!-- Portada -->
 
     <!-- Slide 1: Presentación -->
-    <section class="slide1  container">
+    <section class="slide1 section container fixed">
 
       <div class="slide1__texto">
         <h2><strong>Somos América, Ollin e Itzel</strong></h2>
@@ -122,7 +123,7 @@
 
 
     <!-- Slide 2: Introducción -->
-    <section class="slide2 row" style="margin-top: 10%;">
+    <section class="slide2 row section fixed" style="margin-top: 10%;">
       <div class="slide2__texto col col-12 col-lg-8">
         <h4>
           Como todo viaje, la <strong><u><a data-bs-toggle="modal" data-bs-target="#modalInterdisciplina"
@@ -197,7 +198,7 @@
       <div class="row">
         <div class="slide3__row_element col col-12 col-lg-4">
           <a data-bs-toggle="modal" data-bs-target="#modalMetodologias1" class="modalTerminos">
-            <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
             <h5>
               Metodología interdisciplinaria de investigación.
             </h5>
@@ -206,7 +207,7 @@
 
         <div class="slide3__row_element col col-12 col-lg-4">
           <a data-bs-toggle="modal" data-bs-target="#modalMetodologias2" class="modalTerminos">
-            <img class="slide3__row_img" src="Imagenes/metodologias2.svg">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
             <h5>
               Metodología de desarrollo de museografía interactiva.
             </h5>
@@ -216,7 +217,7 @@
 
         <div class="slide3__row_element col col-12 col-lg-4">
           <a data-bs-toggle="modal" data-bs-target="#modalMetodologias3" class="modalTerminos">
-            <img class="slide3__row_img" src="Imagenes/metodologias3.svg">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
             <h5>
               Modelo de evaluación MiUX.
             </h5>
@@ -275,7 +276,7 @@
 
               <div class="container container__question row" style="text-align: center;">
                 <div class="col col-12">
-                  <img class="slide3__row_img" src="Imagenes/metodologias1.svg">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
                 </div>
                 <div class="col col-12">
                   <h6>
@@ -305,7 +306,7 @@
 
               <div class="container container__question row" style="text-align: center;">
                 <div class="col col-12">
-                  <img class="slide3__row_img" src="Imagenes/metodologias2.svg">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
                 </div>
                 <div class="col col-12">
                   <h6>
@@ -335,7 +336,7 @@
 
               <div class="container container__question row" style="text-align: center;">
                 <div class="col col-12">
-                  <img class="slide3__row_img" src="Imagenes/metodologias3.svg">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
                 </div>
                 <div class="col col-12">
                   <h6>
@@ -356,39 +357,146 @@
     <!-- Slide 4: El viaje -->
     <section class="slide4" style="margin-top: 10%;">
       <div class="row">
-        <div class="col col-lg-6 col-12">
+        <div class="col col-lg-6 col-12" style=" display: flex;  align-items: center;">
           <h5>
             Nuestro viaje no solo nos llevo a través de libros, también tuvimos que recorrer la república mexicana para
             conocer los museos interactivos, casas museo y no me acuerdo de la otra categoría del país.
           </h5>
         </div>
         <div class="col col-lg-6 col-12">
-          <img class="slide8__img" src="Imagenes/mapa.svg">
+          <img class="slide8__img" src="Imagenes/viaje/mapa.svg">
         </div>
       </div>
-
-
     </section>
     <!-- Slide 4: El viaje -->
 
+
     <!-- Slide 5: Experimentos -->
-    <section class="slide5" style="margin-top: 10%;">
+    <section class="slide5" style="margin-top: 10%; display: flex;">
+      <div class="col col-lg-6 col-12" style="text-align:center; align-items: center;">
+<div class="row" style="display: flex;">
+ <a class="col col-lg-6 col-6">
+  <img  class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg" style="padding: 2%;">
+<h6>Máscaras RA
+  </h6>
+</a>
+ 
+<a class="col col-lg-6 col-6">
+
+  <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg" style="padding: 2%;">
+<h6>Tatuajes con RA
+  </h6>
+</a>
+ 
+
+</div>
+<div class="row" style="display: flex;">
+  <a class="col col-lg-6 col-6">
+
+    <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg" style="padding: 2%;">
+  <h6>Bordados con RA
+    </h6>
+  </a>
+  <a class="col col-lg-6 col-6">
+
+    <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg" style="padding: 2%;">
+  <h6>Cuadro interactivo
+    </h6>
+  </a>
+     
+</div>
 
 
+
+
+
+      </div>
+
+      <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+        <h5>
+          Siempre fieles a la alquimia, experimentamos de museografía interactiva en cada oportunidad del camino. Ya
+          fueran descansos o talleres MADIC, creamos sistemas interactivos combinando la obra de Carrington con la
+          tecnología.
+        </h5>
+
+      </div>
+
+
+
+
+      <!-- <div class="row">
+
+
+        <div class="col col-lg-6 col-12">
+          <div class="row" style="justify-content: space-evenly;">
+            <div class="col col-lg-4 col-4 ">
+              <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg">
+              <h6>Máscaras</h6>
+            </div>
+            <div class="col col-lg-4 col-4 ">
+              <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg">
+              <h6>Máscaras</h6>
+            </div>
+          </div>
+
+
+          <div class="row" style="justify-content: space-evenly;">
+
+            <div class="col col-lg-4 col-4 ">
+              <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg">
+              <h6>Máscaras</h6>
+            </div>
+            <div class="col col-lg-4 col-4 ">
+              <img class="slide8__img" src="Imagenes/experimentacion/EXPER_2_Máscaras.svg">
+              <h6>Máscaras</h6>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+          <h5>
+            Siempre fieles a la alquimia, experimentamos de museografía interactiva en cada oportunidad del camino. Ya
+            fueran descansos o talleres MADIC, creamos sistemas interactivos combinando la obra de Carrington con la
+            tecnología.
+          </h5>
+        </div>
+      </div> -->
     </section>
     <!-- Slide 5: Experimentos -->
 
     <!-- Slide 6: Recetario -->
     <section class="slide6" style="margin-top: 10%;">
-
-
-
+      <div>
+        <h5>
+          Como en toda interdisciplina, los trayectos se multiplicaron y tomaron diferentes sentidos. Mientras uníamos
+          narrativa con tecnología para contar la vida cotidiana de Leonora Carrington, en su cocina apareció una senda.
+        </h5>
+      </div>
+      <div class="row">
+        <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+          <h2>Cocina, arte y alquimia eran para ella una misma experiencia. </h2>
+        </div>
+        <div class="col col-lg-6 col-12 " style="text-align: center;">
+          <img src="Imagenes/recetario/recetarioMain.svg" width="80%">
+        </div>
     </section>
     <!-- Slide 6: Recetario -->
 
     <!-- Slide 7: Webapp -->
     <section class="slide7" style="margin-top: 10%;">
-
+      <div>
+        <h5>Hacia el ocaso del sexto día, a seis manos entrelazamos lo que conocimos de la vida cotidiana de la artista,
+          de nuestro visitanteobjetivo y de la experimentación. Siguiendo nuestra metodología de desarrollo, obtuvimos
+          el sistema de museografía interactiva para la CELC.</h5>
+      </div>
+      <div class="row" style="margin-top: 5%; display:flex; justify-content: space-evenly;">
+        <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_1.gif" style="margin-bottom: 5%">
+        <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_inicio.gif" style="margin-bottom: 5%">
+        <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
+        <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
+        <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonoapp_biblioteca.gif" style="margin-bottom: 5%">
+      </div>
 
     </section>
     <!-- Slide 7: Webapp -->
@@ -439,13 +547,13 @@
       <div class="row slide9__container">
         <div class="col col-lg-6 col-12 ">
           <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones1" class="modalTerminos">
-            <img class="slide9__img" src="Imagenes/presentaciones1.svg">
+            <img class="slide9__img" src="Imagenes/presentaciones/presentaciones1.svg">
 
           </a>
         </div>
         <div class="col col-lg-6 col-12">
           <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones2" class="modalTerminos">
-            <img class="slide9__img" src="Imagenes/presentaciones2.jpg">
+            <img class="slide9__img" src="Imagenes/presentaciones/presentaciones2.jpg">
           </a>
         </div>
       </div>
@@ -466,7 +574,7 @@
             <div class="modal-body row" style="background-color: #A14024;">
 
               <div class="col col-lg-4 col-12">
-                <img src="Imagenes/presentaciones1.svg" class="slide8__img" alt="...">
+                <img src="Imagenes/presentaciones/presentaciones1.svg" class="slide8__img" alt="...">
               </div>
               <div class="col col-lg-8 col-12">
                 <h5>
@@ -502,7 +610,7 @@
             <div class="modal-body row" style="background-color: #A14024;">
 
               <div class="col col-lg-4 col-12">
-                <img src="Imagenes/presentaciones2.jpg" class="slide8__img" alt="...">
+                <img src="Imagenes/presentaciones/presentaciones2.jpg" class="slide8__img" alt="...">
               </div>
               <div class="col col-lg-8 col-12">
                 <h5>
@@ -542,10 +650,7 @@
       </div>
     </section>
     <!-- Slide 10: Conclusión -->
-
-
   </div>
-
   <!-- <footer">
         <img class="footer__image" src="Imagenes/monitas.svg" />
         </footer> -->
