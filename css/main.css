@@ -65,7 +65,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: auto; */
 background: linear-gradient(to bottom, #1B21AF 10%,#094A63 20%, #1F5E5A 30%,#8C9E94 40%,#6B879F 50%,#9F6DB7 60%,#7F1730 70%,#A62532 80%,#A14024 90%,#B4742A 100%);
-
+padding-right: 0 !important
 }
 
 a{
@@ -200,15 +200,16 @@ align-items: center;
  display: inline-flex;   
 }
 
-.EDGE-115589208{
-    position: relative;
-    width: -webkit-fill-available;  
-    z-index: 0;
-    background-color: #8C9E94 !important;
-    overflow: hidden;
-    text-overflow: clip;
-    
+.modal-backdrop.show {
+   
+    height: -webkit-fill-available !important;
+
 }
+
+.viaje__bt{
+margin: 5% 0 5% 0;
+}
+
 
 
 *{
