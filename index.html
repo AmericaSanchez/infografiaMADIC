@@ -10,9 +10,8 @@
 
   <script type="text/javascript" src="/main.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <!-- <link rel="stylesheet" type="text/css" href="/css/questionMark.css" /> -->
   <link rel="stylesheet" type="text/css" href="/css/mediaQueries.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="/css/parallax.css" /> -->
+  <link rel="stylesheet" type="text/css" href="/css/parallax.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,32 +74,37 @@
       justify-content: center;
     }
   </style>
-  <script src="js/parallax.js"></script>
 
 </head>
 
 <body>
-  <div class="infografia container section fixed">
+  <div class="infografia fixed scroll-container">
     <!-- Portada -->
-    <section class="presentacion container" style="padding-top: 2%;">
-      <div class="row container fixed">
-        <div style="margin-right: 2%; padding-bottom: 5%; display: flex; justify-content: end;">
-          <img src="Imagenes/portada/presentacionImg2.svg" class="col col-lg-3 col-8">
+    <section class="presentacion pt-3 ">
+      <div class="row container fixed m-auto">
+        <div class="mr-3 pb-5 d-flex justify-content-end">
+          <img src="Imagenes/portada/presentacionImg2.svg" class="col col-lg-3 col-8"
+            alt="Decoración dibujo de manos mágicas">
         </div>
-        <h1 class="col col-12" style="text-align: center; margin: auto">Viaje por la investigación interdisciplinaria
-          para descubrir a Leonora Carrington</h1>
-        <h5>
-          <!-- Itzel Alejandra Jiménez Loranca <br />
-          Ollintzin Mary Carmen Rosas Juárez<br /> -->
-          América Fabiola Sánchez León
-        </h5>
+        <header>
+          <h1 class="col col-12 text-center m-auto">Viaje por la investigación interdisciplinaria
+            para descubrir a Leonora Carrington</h1>
+        </header>
+        <nav>
+          <h5>
+            Itzel Alejandra Jiménez Loranca <br />
+            <!--  Ollintzin Mary Carmen Rosas Juárez<br /> -->
+            América Fabiola Sánchez León
+          </h5>
+        </nav>
+
         <img src="Imagenes/portada/presentacionImg1.svg" class="col col-lg-5 col-8">
       </div>
     </section>
     <!-- Portada -->
 
     <!-- Slide 1: Presentación -->
-    <section class="slide1 section container fixed">
+    <section class="slide1 fixed">
 
       <div class="slide1__texto fixed">
         <h2><strong>Somos América, Ollin e Itzel</strong></h2>
@@ -148,19 +152,25 @@
 
           </div>
         </div>
+
     </section>
     <!-- Slide 1: Presentación -->
 
 
     <!-- Slide 2: Introducción -->
-    <section class="slide2 row section fixed" style="margin-top: 10%;">
-      <div class="slide2__texto col col-12 col-lg-8">
+    <section class="slide2 row fixed">
+      <div class="slide2__texto col col-12 col-lg-8 ml-1">
         <h4>
           Como todo viaje, la <strong><u><a data-bs-toggle="modal" data-bs-target="#modalInterdisciplina"
-                class="modalTerminos">interdisciplina</a></u></strong> implica descubrimiento y
+                class="modalTerminos" role="link">interdisciplina</a></u></strong> implica descubrimiento y
           transformación. Recuerda a la antigua alquimia, en la que elementos distintos colisionan entre sí para crear
           armonía.
         </h4>
+        <div>
+          <img class="footer__image" src="Imagenes/monitas.svg" />
+
+        </div>
+
       </div>
       <div class="slide2__img col col-12 col-lg-4">
         <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
@@ -173,8 +183,8 @@
           <div class="modal-content">
             <div class="modal-header" style="background-color: #094A63;">
               <h3 class="modal-title" id="exampleModalLabel">Interdisciplina</h3>
-              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                  class="bi bi-x-lg"></i></button>
+              <button role="button" type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close"
+                style="color: white;"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="modal-body" style="background-color: #094A63;">
 
@@ -200,754 +210,986 @@
           </div>
         </div>
       </div>
-      <!-- Modal Que es interdisciplina
-
+      <!-- Modal Que es interdisciplina-->
     </section>
     <!-- Slide 2: Introducción -->
 
 
-      <!-- Slide 2.1 : Introducción -->
-      <section class="slide2 row section fixed" style="margin-top: 10%;">
-        <div class="slide2__texto col col-12 col-lg-8">
-          <h4>
-            Nosotras colisionamos en la Maestría en Diseño, Información y Comunicación (MADIC). A mediados de 2019,
-            nuestros caminos se entretejieron por un interés común por la artista
-            <strong><u><a data-bs-toggle="modal" data-bs-target="#modalLeonora" class="modalTerminos">Leonora
-                  Carrington.</a></u></strong>
+    <!-- Slide 2.1 : Introducción -->
+    <section class="slide2 row fixed">
+      <div class="slide2__texto col col-12 col-lg-8">
+        <h4>
+          Nosotras colisionamos en la Maestría en Diseño, Información y Comunicación (MADIC). A mediados de 2019,
+          nuestros caminos se entretejieron por un interés común por la artista
+          <strong><u><a data-bs-toggle="modal" data-bs-target="#modalLeonora" class="modalTerminos">Leonora
+                Carrington.</a></u></strong>
 
-          </h4>
-        </div>
-        <div class="slide2__img col col-12 col-lg-4">
-          <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
-        </div>
+        </h4>
+      </div>
+      <div class="slide2__img col col-12 col-lg-4">
+        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+      </div>
 
-        <!-- Modal Que es interdisciplina-->
-        <div class="modal fade" id="modalLeonora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #094A63;">
-                <h3 class="modal-title" id="exampleModalLabel">¿Quién es Leonora Carrington?</h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #094A63;">
+      <!-- Modal Quien es Leonora-->
+      <div class="modal fade" id="modalLeonora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #094A63;">
+              <h3 class="modal-title" id="exampleModalLabel">¿Quién es Leonora Carrington?</h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #094A63;">
 
-                <div class="container container__question row">
-                  <div class="col-lg-2 col-sm-6 container__question_icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                      class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
-                      <path
-                        d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
-                      <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
-                      <path class="rotated"
-                        d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
-                    </svg>
-                  </div>
-                  <div class="col-lg-10 col-sm-6">
-                    <h5>
-                      De origen inglés, Leonora Carrington, una de las artistas más importantes del surrealismo, llegó a
-                      México en la Segunda Guerra Mundial. Se casó con el fotógrafo húngaro Emérico “Chiki” Weisz y
-                      tuvieron 2 hijos: Gabriel y Pablo. En la Ciudad de México creó pinturas, esculturas, relatos,
-                      tapices y demás obras. Falleció en 2011.
-                    </h5>
-                  </div>
+              <div class="container container__question row">
+                <div class="col-lg-2 col-sm-6 container__question_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+                    <path
+                      d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                    <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                    <path class="rotated"
+                      d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                  </svg>
+                </div>
+                <div class="col-lg-10 col-sm-6">
+                  <h5>
+                    De origen inglés, Leonora Carrington, una de las artistas más importantes del surrealismo, llegó a
+                    México en la Segunda Guerra Mundial. Se casó con el fotógrafo húngaro Emérico “Chiki” Weisz y
+                    tuvieron 2 hijos: Gabriel y Pablo. En la Ciudad de México creó pinturas, esculturas, relatos,
+                    tapices y demás obras. Falleció en 2011.
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal Que es interdisciplina-->
+      </div>
+      <!-- Modal Quien es Leonora-->
 
-      </section>
-      <!-- Slide 2.1 Introducción -->
-
-      <!-- Slide 3: Metodologías -->
-      <section class="slide3" style="margin-top: 10%;">
-        <div>
-          <h6>Fijamos nuestro destino en crear un sistema de <strong><u><a data-bs-toggle="modal"
-                  data-bs-target="#modalMuseografia" class="modalTerminos">museografía interactiva</a></u></strong> que
-            acompañara a
-            las personas a conocer la vida cotidiana de la artista en México.
-            Fijamos nuestro destino en crear un sistema de museografía interactiva que acompañara a las personas a
-            conocer
-            la
-            vida cotidiana de la artista en México.
-            <br><br>
-            Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
-            metodología
-            conocida hasta ahora. Por eso, creamos 3 metodologías propias.
-            Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
-            metodología
-            conocida hasta ahora. Por eso, creamos 3 metodologías propias.
-          </h6>
-        </div>
-
-        <div class="row">
-          <div class="slide3__row_element col col-12 col-lg-4">
-            <a data-bs-toggle="modal" data-bs-target="#modalMetodologias1" class="modalTerminos">
-              <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
-              <h5>
-                Metodología interdisciplinaria de investigación.
-              </h5>
-            </a>
-          </div>
-
-          <div class="slide3__row_element col col-12 col-lg-4">
-            <a data-bs-toggle="modal" data-bs-target="#modalMetodologias2" class="modalTerminos">
-              <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
-              <h5>
-                Metodología de desarrollo de museografía interactiva.
-              </h5>
-            </a>
-          </div>
+    </section>
+    <!-- Slide 2.1 Introducción -->
 
 
-          <div class="slide3__row_element col col-12 col-lg-4">
-            <a data-bs-toggle="modal" data-bs-target="#modalMetodologias3" class="modalTerminos">
-              <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
-              <h5>
-                Modelo de evaluación MiUX.
-              </h5>
-            </a>
-          </div>
-        </div>
+    <!-- Slide 2.2 : Introducción -->
+    <section class="slide2 row fixed">
+      <div class="slide2__texto col col-12 col-lg-8">
+        <h4>
+          Iniciamos el trayecto hacia lugares surrealistas y desafiamos nuestros límites, bajo la atenta mirada de sus
+          criaturas mágicas.
+        </h4>
+      </div>
+      <div class="slide2__img col col-12 col-lg-4">
+        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+      </div>
+
+    </section>
+    <!-- Slide 2.2 Introducción -->
+
+    <!-- Slide 2.3 : Introducción -->
+    <section class="slide2 row fixed">
+      <div class="slide2__texto col col-12 col-lg-8">
+        <h4>
+          Nuestra investigación nació de la mano de la Casa Estudio Leonora Carrington (CELC), museo de la Universidad
+          Autónoma Metropolitana (UAM), dedicado a conservar la memoria de la artista en el hogar que habitó por más de
+          60 años.
+        </h4>
+      </div>
+      <div class="slide2__img col col-12 col-lg-4">
+        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+      </div>
 
 
-        <!-- Modal Museografía interactiva-->
-        <div class="modal fade" id="modalMuseografia" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #1F5E5A;">
-                <h3 class="modal-title" id="exampleModalLabel">Museografía interactiva</h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #1F5E5A;">
+    </section>
+    <!-- Slide 2.3 Introducción -->
 
-                <div class="container container__question row">
-                  <div class="col-lg-2 col-sm-6 container__question_icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                      class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
-                      <path
-                        d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
-                      <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
-                      <path class="rotated"
-                        d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
-                    </svg>
-                  </div>
-                  <div class="col-lg-10 col-sm-6">
-                    <h5>
-                      Recurso didáctico empleado en los museos para favorecer en los visitantes experiencias
-                      significativas, es decir, aspectos lúdicos, de aprendizaje y rituales, a través de la interacción.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Museografía interactiva-->
+    <!-- Slide 2.4 : Introducción -->
+    <section class="slide2 row fixed">
+      <div class="slide2__texto col col-12 col-lg-8">
+        <h4>
+          Le dimos un nombre a la investigación: “Alquimia, tecnología y vida cotidiana: Museografía interactiva para la
+          Casa Estudio Leonora Carrington”.
 
-        <!-- Modal Metodología 1-->
-        <div class="modal fade" id="modalMetodologias1" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #1F5E5A;">
-                <h3 class="modal-title" id="exampleModalLabel">Metodología interdisciplinaria de investigación.</h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #1F5E5A;">
+        </h4>
+      </div>
+      <div class="slide2__img col col-12 col-lg-4">
+        <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+      </div>
 
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="col col-12">
-                    <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
-                  </div>
-                  <div class="col col-12">
-                    <h6>
-                      Para guiar la investigación, se conjuntaron en cuatro etapas los saberes de la museografía
-                      interactiva, la ingeniería en desarrollo de software y principios de la magia caos.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Metodología 1-->
+    </section>
+    <!-- Slide 2.4 Introducción -->
 
-        <!-- Modal Metodología 2-->
-        <div class="modal fade" id="modalMetodologias2" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #1F5E5A;">
-                <h3 class="modal-title" id="exampleModalLabel">Metodología de desarrollo de museografía interactiva.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #1F5E5A;">
+    <!-- Slide 3: Metodologías -->
+    <section class="slide3">
+      <div class="mt-5">
+        <h6>Fijamos nuestro destino en crear un sistema de <strong><u><a data-bs-toggle="modal"
+                data-bs-target="#modalMuseografia" class="modalTerminos">museografía interactiva</a></u></strong> que
+          acompañara a
+          las personas a conocer la vida cotidiana de la artista en México.
+          Fijamos nuestro destino en crear un sistema de museografía interactiva que acompañara a las personas a
+          conocer
+          la
+          vida cotidiana de la artista en México.
+          <br><br>
+          Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
+          metodología
+          conocida hasta ahora. Por eso, creamos 3 metodologías propias.
+          Sin embargo, por la naturaleza interdisciplinaria, la ruta a seguir no podía ser abordada con ninguna
+          metodología
+          conocida hasta ahora. Por eso, creamos 3 metodologías propias.
+        </h6>
+      </div>
 
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="col col-12">
-                    <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
-                  </div>
-                  <div class="col col-12">
-                    <h6>
-                      Usada en la segunda etapa de la metodología principal. Siguiendo los pasos del proceso mágico de
-                      Konstantinos, se integraron el diseño de información, la experiencia de usuario, el desarrollo web
-                      y
-                      la escritura creativa. </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Metodología 2-->
-
-        <!-- Modal Metodología 3-->
-        <div class="modal fade" id="modalMetodologias3" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #1F5E5A;">
-                <h3 class="modal-title" id="exampleModalLabel">Modelo de evaluación MiUX.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #1F5E5A;">
-
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="col col-12">
-                    <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
-                  </div>
-                  <div class="col col-12">
-                    <h6>
-                      Experiencia de Usuario de la Museografía Interactiva. Reúne instrumentos de la comunicación
-                      museográfica y la experiencia de usuario, para evaluar un sistema de museografía interactiva en el
-                      contexto de una visita al museo. </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Metodología 3-->
-      </section>
-      <!-- Slide 3: Metodologías -->
-
-
-      <!-- Slide 4: El viaje -->
-      <section class="slide4" style="margin-top: 10%;">
-        <div class="row">
-          <div class="col col-lg-6 col-12" style="align-self: center;">
+      <div class="row">
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a data-bs-toggle="modal" data-bs-target="#modalMetodologias1" class="modalTerminos">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
             <h5>
-              Nuestro viaje no solo nos llevo a través de libros, también tuvimos que recorrer la república mexicana
-              para
-              conocer los museos interactivos, casas museo y no me acuerdo de la otra categoría del país.
-            </h5><br><br>
-            <div style="display: grid; text-align: center;">
-              <a data-bs-toggle="modal" data-bs-target="#modalMuseo1" class="modalTerminos"> <button type="button"
-                  class="btn btn-outline-light viaje__btn">San Luis Potosí</button>
-              </a>
-              <a data-bs-toggle="modal" data-bs-target="#modalMuseo2" class="modalTerminos">
-                <button type="button" class="btn btn-outline-light viaje__bt">Ciudad de México</button>
-              </a>
-
-              <a data-bs-toggle="modal" data-bs-target="#modalMuseo3" class="modalTerminos">
-                <button type="button" class="btn btn-outline-light viaje__bt">Estado de México</button>
-              </a>
-            </div>
-
-          </div>
-          <div class="col col-lg-6 col-12">
-            <img class="slide8__img" src="Imagenes/viaje/mapa.svg">
-          </div>
-        </div>
-
-        <!-- Modal Museo 1-->
-        <div class="modal fade" id="modalMuseo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #8C9E94">
-                <h3 class="modal-title" id="exampleModalLabel">Viaje por San Luis Potosí.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #8C9E94;">
-
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="row" style="display: flex; margin-bottom: 5%;">
-
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-11.svg"
-                      style="transform:rotate(-4deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-12.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-13.svg"
-                      style="transform:rotate(-5deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-14.svg"
-                      style="transform:rotate(6deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-15.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-16.svg"
-                      style="transform:rotate(-6deg);" />
-
-                  </div>
-                  <div>
-                    <p>Museo Leonora Carrington Xilitla & Museo Leonora Carrington SLP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Museo 1-->
-
-        <!-- Modal Museo 2-->
-        <div class="modal fade" id="modalMuseo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #8C9E94">
-                <h3 class="modal-title" id="exampleModalLabel">Viaje por la Ciudad de México.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #8C9E94;">
-
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="row" style="display: flex; margin-bottom: 5%;">
-
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-18.svg"
-                      style="transform:rotate(-4deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-20.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-21.svg"
-                      style="transform:rotate(-5deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-22.svg"
-                      style="transform:rotate(6deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-23.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-24.svg"
-                      style="transform:rotate(-6deg);" />
-
-                  </div>
-                  <div>
-                    <p>Casa de la bola, Museo de Sitio Recinto Homenaje Benito Juárez, Casa Museo Guillermo Tovar de
-                      Teresa , Da Vinci Experience, Casa del Poeta, Museo Interactivo de Economía MIDE, Museo de Mujeres
-                      MUMA </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Museo 2-->
-
-        <!-- Modal Museo 3-->
-        <div class="modal fade" id="modalMuseo3" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #8C9E94">
-                <h3 class="modal-title" id="exampleModalLabel">Viaje por Toluca, Estado de México.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #8C9E94;">
-
-                <div class="container container__question row" style="text-align: center;">
-                  <div class="row" style="display: flex; margin-bottom: 5%;">
-
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-04.svg"
-                      style="transform:rotate(-4deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-05.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-06.svg"
-                      style="transform:rotate(-5deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-07.svg"
-                      style="transform:rotate(6deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-08.svg"
-                      style="transform:rotate(2deg);" />
-                    <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-09.svg"
-                      style="transform:rotate(-6deg);" />
-
-                  </div>
-                  <div>
-                    <p>Museo del alfeñique & Centro Cultural Toluca: Diego el Grande & Frida y yo. </p>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Museo 3-->
-      </section>
-      <!-- Slide 4: El viaje -->
-
-
-      <!-- Slide 5: Experimentos -->
-      <section class="slide5" style="margin-top: 10%; display: flex;">
-        <div class="col col-lg-6 col-12" style="text-align:center; align-items: center;">
-          <div class="row" style="display: flex;">
-
-            <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento1">
-              <img class="slide8__img" src="Imagenes/experimentacion/polaroidsMascara.svg" style="padding: 2%;">
-              <h6>Máscaras RA
-              </h6>
-            </a>
-
-            <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento2">
-              <img class="slide8__img" src="Imagenes/experimentacion/polaroid_Mollete.gif" style="padding: 2%;">
-              <h6>Tatuajes con RA
-              </h6>
-            </a>
-
-          </div>
-          <div class="row" style="display: flex;">
-            <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento3">
-              <img class="slide8__img" src="Imagenes/experimentacion/polaroidBordados.svg" style="padding: 2%;">
-              <h6>Bordados con RA
-              </h6>
-            </a>
-            <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento4">
-              <img class="slide8__img" src="Imagenes/experimentacion/polaroidsCuadro.svg" style="padding: 2%;">
-              <h6>Cuadro interactivo
-              </h6>
-            </a>
-          </div>
-        </div>
-
-        <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
-          <h5>
-            Siempre fieles a la alquimia, experimentamos de museografía interactiva en cada oportunidad del camino. Ya
-            fueran descansos o talleres MADIC, creamos sistemas interactivos combinando la obra de Carrington con la
-            tecnología.
-          </h5>
-
-        </div>
-
-
-        <!-- Modal Experimento 1-->
-        <div class="modal fade" id="modalExperimento1" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #6B879F">
-                <h3 class="modal-title" id="exampleModalLabel"> Máscaras con RA.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #6B879F;">
-
-                <div class="container container__question row" style="text-align: center;">
-
-                  <div class="col col-12">
-
-                    <h5>Leonora Carrington amaba los animales… y nosotras también. Los gatos de su obra fueron
-                      inspiración
-                      para crear el tatuaje con realidad aumentada de Mollete, el gato de América. Puedes conocerlo
-                      <strong><u><a>aquí.</a></u></strong>
-                    </h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Experimento 1-->
-
-        <!-- Modal Experimento 2-->
-        <div class="modal fade" id="modalExperimento2" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #6B879F">
-                <h3 class="modal-title" id="exampleModalLabel">Tatuaje con RA.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #6B879F;">
-
-                <div class="container container__question row" style="text-align: center;">
-
-                  <div class="col col-12">
-
-                    <h4>¿Cómo te verías si fueras uno de los seres mágicos de Leonora Carrington?</h4>
-                    <h5>Con realidad aumentada e hicimos un filtro para redes sociales. Te lo puedes probar
-                      <strong><u><a>aquí.</a></u></strong>
-                    </h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Experimento 2-->
-
-
-        <!-- Modal Experimento3 -->
-        <div class="modal fade" id="modalExperimento3" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #6B879F">
-                <h3 class="modal-title" id="exampleModalLabel">Bordados con RA.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #6B879F;">
-
-                <div class="container container__question row" style="text-align: center;">
-
-                  <div class="col col-12">
-
-                    <h4>¿Cómo te verías si fueras uno de los seres mágicos de Leonora Carrington?</h4>
-                    <h5>Con realidad aumentada e hicimos un filtro para redes sociales. Te lo puedes probar
-                      <strong><u><a>aquí.</a></u></strong>
-                    </h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Experimento 3 -->
-
-        <!-- Modal Experimento 4 -->
-        <div class="modal fade" id="modalExperimento4" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #6B879F">
-                <h3 class="modal-title" id="exampleModalLabel">Cuadro interactivo.
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body" style="background-color: #6B879F;">
-
-                <div class="container container__question row" style="text-align: center;">
-
-                  <div class="col col-12">
-
-                    <h4>¿Cómo te verías si fueras uno de los seres mágicos de Leonora Carrington?</h4>
-                    <h5>Con realidad aumentada e hicimos un filtro para redes sociales. Te lo puedes probar
-                      <strong><u><a>aquí.</a></u></strong>
-                    </h5>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Experimento 4 -->
-      </section>
-      <!-- Slide 5: Experimentos -->
-
-      <!-- Slide 6: Recetario -->
-      <section class="slide6" style="margin-top: 10%;">
-        <div>
-          <h5>
-            Como en toda interdisciplina, los trayectos se multiplicaron y tomaron diferentes sentidos. Mientras uníamos
-            narrativa con tecnología para contar la vida cotidiana de Leonora Carrington, en su cocina apareció una
-            senda.
-          </h5>
-        </div>
-        <div class="row">
-          <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
-            <h2>Cocina, arte y alquimia eran para ella una misma experiencia. </h2>
-          </div>
-          <div class="col col-lg-6 col-12 " style="text-align: center;">
-            <img src="Imagenes/recetario/recetarioMain.svg" width="80%">
-          </div>
-      </section>
-      <!-- Slide 6: Recetario -->
-
-      <!-- Slide 7: Webapp -->
-      <section class="slide7" style="margin-top: 10%;">
-        <div>
-          <h5>Hacia el ocaso del sexto día, a seis manos entrelazamos lo que conocimos de la vida cotidiana de la
-            artista,
-            de nuestro visitanteobjetivo y de la experimentación. Siguiendo nuestra metodología de desarrollo, obtuvimos
-            el sistema de museografía interactiva para la CELC.</h5>
-        </div>
-        <div class="row" style="margin-top: 5%; display:flex; justify-content: space-evenly;">
-          <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_1.gif" style="margin-bottom: 5%">
-          <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_inicio.gif" style="margin-bottom: 5%">
-          <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
-          <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
-          <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonoapp_biblioteca.gif" style="margin-bottom: 5%">
-        </div>
-
-      </section>
-      <!-- Slide 7: Webapp -->
-
-      <!-- Slide 8: ICR -->
-      <section class="slide8" style="margin-top: 10%;">
-        <div class="row">
-          <div class="col col-lg-3 col-12">
-            <h5>Todo esté viaje lo plasmamos en nuestra idónea comunicación de resultados, un libro mágico con el cual
-              participamos en el Premio Mexicano del Diseño y ganó una mención honorífica en la categoría de mejor tesis
-              de maestría.
-              <br> <br>
-              Si tienes curiosidad puedes leerlo aquí
+              Metodología interdisciplinaria de investigación.
             </h5>
-          </div>
-          <div class="col col-lg-3 col-12">
-            <img class="slide8__img" src="Imagenes/icrPremio.png">
-          </div>
-          <div class="col col-lg-6 col-12" style="margin-bottom: 10%;">
-            <a class="modalTerminos" style="text-decoration: none;"
-              href="https://www.yumpu.com/es/document/view/65859459/alquimia-tecnologia-y-vida-cotidiana-museografia-interactiva-para-la-casa-estudio-leonora-carrington"
-              title="Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington"
-              target="_blank">
-              Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington</a>
-            <!-- <iframe width="940px" height="737px" src="https://www.yumpu.com/es/embed/view/qWhicbn0GzmOP8UQ" frameborder="0" allowfullscreen="true"></iframe> -->
-            <div class='embed-container' data-page-width='494' data-page-height='640' id='ypembedcontainer'>
-              <iframe src="https://www.yumpu.com/es/embed/view/PHxAlJQgaefzkZhG" frameborder="0" allowfullscreen="true"
-                allowtransparency="true"></iframe>
+          </a>
+        </div>
+
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a data-bs-toggle="modal" data-bs-target="#modalMetodologias2" class="modalTerminos">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
+            <h5>
+              Metodología de desarrollo de museografía interactiva.
+            </h5>
+          </a>
+        </div>
+
+
+        <div class="slide3__row_element col col-12 col-lg-4">
+          <a data-bs-toggle="modal" data-bs-target="#modalMetodologias3" class="modalTerminos">
+            <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
+            <h5>
+              Modelo de evaluación MiUX.
+            </h5>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Modal Museografía interactiva-->
+      <div class="modal fade" id="modalMuseografia" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #1F5E5A;">
+              <h3 class="modal-title" id="exampleModalLabel">Museografía interactiva</h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
             </div>
-            <script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js'></script>
+            <div class="modal-body" style="background-color: #1F5E5A;">
+
+              <div class="container container__question row">
+                <div class="col-lg-2 col-sm-6 container__question_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-patch-question" viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+                    <path
+                      d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+                    <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+                    <path class="rotated"
+                      d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                  </svg>
+                </div>
+                <div class="col-lg-10 col-sm-6">
+                  <h5>
+                    Recurso didáctico empleado en los museos para favorecer en los visitantes experiencias
+                    significativas, es decir, aspectos lúdicos, de aprendizaje y rituales, a través de la interacción.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Museografía interactiva-->
+
+      <!-- Modal Metodología 1-->
+      <div class="modal fade" id="modalMetodologias1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #1F5E5A;">
+              <h3 class="modal-title" id="exampleModalLabel">Metodología interdisciplinaria de investigación.</h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #1F5E5A;">
+
+              <div class="container container__question row text-center">
+                <div class="col col-12">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias1.svg">
+                </div>
+                <div class="col col-12">
+                  <h6>
+                    Para guiar la investigación, se conjuntaron en cuatro etapas los saberes de la museografía
+                    interactiva, la ingeniería en desarrollo de software y principios de la magia caos.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Metodología 1-->
+
+      <!-- Modal Metodología 2-->
+      <div class="modal fade" id="modalMetodologias2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #1F5E5A;">
+              <h3 class="modal-title" id="exampleModalLabel">Metodología de desarrollo de museografía interactiva.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg "></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #1F5E5A;">
+
+              <div class="container container__question row" style="text-align: center;">
+                <div class="col col-12">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias2.svg">
+                </div>
+                <div class="col col-12">
+                  <h6>
+                    Usada en la segunda etapa de la metodología principal. Siguiendo los pasos del proceso mágico de
+                    Konstantinos, se integraron el diseño de información, la experiencia de usuario, el desarrollo web
+                    y
+                    la escritura creativa. </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Metodología 2-->
+
+      <!-- Modal Metodología 3-->
+      <div class="modal fade" id="modalMetodologias3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #1F5E5A;">
+              <h3 class="modal-title" id="exampleModalLabel">Modelo de evaluación MiUX.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #1F5E5A;">
+
+              <div class="container container__question row" style="text-align: center;">
+                <div class="col col-12">
+                  <img class="slide3__row_img" src="Imagenes/metodologias/metodologias3.svg">
+                </div>
+                <div class="col col-12">
+                  <h6>
+                    Experiencia de Usuario de la Museografía Interactiva. Reúne instrumentos de la comunicación
+                    museográfica y la experiencia de usuario, para evaluar un sistema de museografía interactiva en el
+                    contexto de una visita al museo. </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Metodología 3-->
+    </section>
+    <!-- Slide 3: Metodologías -->
+
+    <!-- Slide 4: El viaje -->
+    <section class="slide4">
+      <div class="row">
+        <div class="col col-lg-6 col-12" style="align-self: center;">
+          <h5>
+            Nuestro viaje no solo nos llevo a través de libros, también tuvimos que recorrer la república mexicana
+            para
+            conocer los museos interactivos, casas museo y no me acuerdo de la otra categoría del país.
+          </h5><br><br>
+          <div style="display: grid; text-align: center;">
+            <a data-bs-toggle="modal" data-bs-target="#modalMuseo1" class="modalTerminos"> <button type="button"
+                class="btn btn-outline-light viaje__btn">San Luis Potosí</button>
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#modalMuseo2" class="modalTerminos">
+              <button type="button" class="btn btn-outline-light viaje__bt">Ciudad de México</button>
+            </a>
+
+            <a data-bs-toggle="modal" data-bs-target="#modalMuseo3" class="modalTerminos">
+              <button type="button" class="btn btn-outline-light viaje__bt">Estado de México</button>
+            </a>
           </div>
 
-          <!-- <footer">
+        </div>
+        <div class="col col-lg-6 col-12">
+          <img class="slide8__img" src="Imagenes/viaje/mapa.svg">
+        </div>
+      </div>
+
+      <!-- Modal Museo 1-->
+      <div class="modal fade" id="modalMuseo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #8C9E94">
+              <h3 class="modal-title" id="exampleModalLabel">Viaje por San Luis Potosí.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #8C9E94;">
+
+              <div class="container container__question row" style="text-align: center;">
+                <div class="row" style="display: flex; margin-bottom: 5%;">
+
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-11.svg"
+                    style="transform:rotate(-4deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-12.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-13.svg"
+                    style="transform:rotate(-5deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-14.svg"
+                    style="transform:rotate(6deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-15.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/slp/polaroidsSLP-16.svg"
+                    style="transform:rotate(-6deg);" />
+
+                </div>
+                <div>
+                  <p>Museo Leonora Carrington Xilitla & Museo Leonora Carrington SLP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Museo 1-->
+
+      <!-- Modal Museo 2-->
+      <div class="modal fade" id="modalMuseo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #8C9E94">
+              <h3 class="modal-title" id="exampleModalLabel">Viaje por la Ciudad de México.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #8C9E94;">
+
+              <div class="container container__question row text-center">
+                <div class="row d-flex mb-3">
+
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-18.svg"
+                    style="transform:rotate(-4deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-20.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-21.svg"
+                    style="transform:rotate(-5deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-22.svg"
+                    style="transform:rotate(6deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-23.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/mex/polaroidsMex-24.svg"
+                    style="transform:rotate(-6deg);" />
+
+                </div>
+                <div>
+                  <p>Casa de la bola, Museo de Sitio Recinto Homenaje Benito Juárez, Casa Museo Guillermo Tovar de
+                    Teresa , Da Vinci Experience, Casa del Poeta, Museo Interactivo de Economía MIDE, Museo de Mujeres
+                    MUMA </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Museo 2-->
+
+      <!-- Modal Museo 3-->
+      <div class="modal fade" id="modalMuseo3" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #8C9E94">
+              <h3 class="modal-title" id="exampleModalLabel">Viaje por Toluca, Estado de México.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #8C9E94;">
+
+              <div class="container container__question row" style="text-align: center;">
+                <div class="row" style="display: flex; margin-bottom: 5%;">
+
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-04.svg"
+                    style="transform:rotate(-4deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-05.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-06.svg"
+                    style="transform:rotate(-5deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-07.svg"
+                    style="transform:rotate(6deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-08.svg"
+                    style="transform:rotate(2deg);" />
+                  <img class="col col-lg-2 col-4" src="Imagenes/viaje/cdmx/polaroids-09.svg"
+                    style="transform:rotate(-6deg);" />
+
+                </div>
+                <div>
+                  <p>Museo del alfeñique & Centro Cultural Toluca: Diego el Grande & Frida y yo. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Museo 3-->
+    </section>
+    <!-- Slide 4: El viaje -->
+
+    <!-- Slide 5: Experimentos -->
+    <section class="slide5">
+      <div class="col col-lg-6 col-12 text-center" style="align-items: center;">
+        <div class="row d-flex">
+
+          <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento1">
+            <img class="slide8__img" src="Imagenes/experimentacion/polaroidsMascara.svg" style="padding: 2%;">
+            <h6>Máscaras RA
+            </h6>
+          </a>
+
+          <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento2">
+            <img class="slide8__img" src="Imagenes/experimentacion/polaroid_Mollete.gif" style="padding: 2%;">
+            <h6>Tatuajes con RA
+            </h6>
+          </a>
+
+        </div>
+        <div class="row" style="display: flex;">
+          <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento3">
+            <img class="slide8__img" src="Imagenes/experimentacion/polaroidBordados.svg" style="padding: 2%;">
+            <h6>Bordados con RA
+            </h6>
+          </a>
+          <a class="col col-lg-6 col-6 modalTerminos" data-bs-toggle="modal" data-bs-target="#modalExperimento4">
+            <img class="slide8__img" src="Imagenes/experimentacion/polaroidsCuadro.svg" style="padding: 2%;">
+            <h6>Cuadro interactivo
+            </h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+        <h5>
+          Siempre fieles a la alquimia, experimentamos de museografía interactiva en cada oportunidad del camino. Ya
+          fueran descansos o talleres MADIC, creamos sistemas interactivos combinando la obra de Carrington con la
+          tecnología.
+        </h5>
+
+      </div>
+
+
+      <!-- Modal Experimento 1-->
+      <div class="modal fade" id="modalExperimento1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #6B879F">
+              <h3 class="modal-title" id="exampleModalLabel"> Máscaras con RA.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #6B879F;">
+
+              <div class="container container__question row" style="text-align: center;">
+                <div class="row">
+
+                  <img class="col col-lg-3 col-6 mb-3" src="Imagenes/experimentacion/mascara0.png">
+                  <img class="col col-lg-3 col-6 mb-3" src="Imagenes/experimentacion/mascara2.png">
+                  <img class="col col-lg-3 col-6 mb-3" src="Imagenes/experimentacion/mascara1.png">
+                  <img class="col col-lg-3 col-6 mb-3" src="Imagenes/experimentacion/mascara3.png">
+
+                </div>
+
+                <div class="col col-12">
+
+                  <h4>¿Cómo te verías si fueras uno de los seres mágicos de Leonora Carrington?</h4>
+                  <h5>Con realidad aumentada e hicimos un filtro para redes sociales.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Experimento 1-->
+
+      <!-- Modal Experimento 2-->
+      <div class="modal fade" id="modalExperimento2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #6B879F">
+              <h3 class="modal-title" id="exampleModalLabel">Tatuaje con RA.
+              </h3>
+              <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body" style="background-color: #6B879F;">
+
+              <div class="container container__question row" style="text-align: center;">
+
+                <div class="col-lg-6 col-12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/K3kIJ6JfEC8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-6 col-12 d-flex align-items-center">
+                  <h5>Leonora Carrington amaba los animales… y nosotras también. Los gatos de su obra fueron
+                    inspiración para crear el tatuaje con realidad aumentada de Mollete, el gato de América.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+  <!-- Modal Experimento 2-->
+
+
+  <!-- Modal Experimento3 -->
+  <div class="modal fade" id="modalExperimento3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #6B879F">
+          <h3 class="modal-title" id="exampleModalLabel">Bordados con RA.
+          </h3>
+          <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+              class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body" style="background-color: #6B879F;">
+
+          <div class="container container__question row text-center">
+
+            <div class="col-lg-6 col-12">
+              <img src="Imagenes/experimentacion/experimentoBordado.png" class="slide8__img">
+            </div>
+            <div class="col-lg-6 col-12 d-flex align-items-center">
+
+
+              <h5>A Leonora Carrington le gustaba bordar. Por eso, expresamos con hilos y realidad aumentada los avances
+                de nuestra investigación. Bordados presentados en la exposición de carteles científicos de la MADIC
+                (2020).
+
+                <br> <br>
+                Si quieres probar el código descarga la aplicación <strong>Zappar</strong> y escanea la pantalla.
+              </h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Experimento 3 -->
+
+  <!-- Modal Experimento 4 -->
+  <div class="modal fade" id="modalExperimento4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #6B879F">
+          <h3 class="modal-title" id="exampleModalLabel">Cuadro interactivo.
+          </h3>
+          <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+              class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body" style="background-color: #6B879F;">
+
+          <div class="container container__question row text-center align-items-center">
+            <div class="col-lg-6 col-12">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5d_RCvVTdkE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+            <div class="col-lg-6 col-12">
+
+              <h5>“La cocina aromática de la abuela Moorhead” (Carrington, 1975) fue intervenida con Arduino, Open CV,
+                Python y Octave. A través de un intercambio con el espectador, los personajes e ingredientes recibían
+                vida. Proyecto para las unidades Multimedia Interactiva y Taller de Sistemas Interactivos.
+
+              </h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Experimento 4 -->
+  </section>
+  <!-- Slide 5: Experimentos -->
+
+  <!-- Slide 6: Recetario -->
+  <section class="slide6">
+    <div>
+      <h5>
+        Como en toda interdisciplina, los trayectos se multiplicaron y tomaron diferentes sentidos. Mientras uníamos
+        narrativa con tecnología para contar la vida cotidiana de Leonora Carrington, en su cocina apareció una
+        senda.
+      </h5>
+    </div>
+    <div class="row">
+      <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+        <h2>Cocina, arte y alquimia eran para ella una misma experiencia. </h2>
+      </div>
+      <div class="col col-lg-6 col-12 text-center">
+        <img src="Imagenes/recetario/recetarioMain.svg" width="60%">
+      </div>
+  </section>
+  <!-- Slide 6: Recetario -->
+
+  <!-- Slide 6.1: Recetario -->
+  <section class="slide6">
+    <div class="row">
+      <div class="col col-lg-6 col-12 text-center">
+        <img src="Imagenes/recetario/recetarioMain.svg" width="60%">
+      </div>
+
+      <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+        <h5>Deseábamos contar esa historia y lo hicimos preparando sus recetas, con la guía de su hijo Pablo Weisz; su
+          prima Johana Moorhead; Yolanda Gudiño, ama de llaves de los Weisz-Carrington, y algunos documentos.</h5>
+      </div>
+
+  </section>
+  <!-- Slide 6.1: Recetario -->
+
+  <!-- Slide 6.2: Recetario -->
+  <section class="slide6">
+    <div>
+      <h5>
+        Con ayuda de chefs profesionales y junto a la directora Académica y Cultural de la UAM, Dra. Alejandra Osorio,
+        creamos el libro
+      </h5>
+
+    </div>
+    <div class="row">
+      <div class="col col-lg-6 col-12 text-center">
+        <img src="Imagenes/receta_libro.jpg" width="50%">
+      </div>
+
+      <div class="col col-lg-6 col-12 text-center m-auto">
+        <h5>
+          La cocina alquímica (o cómo salvarse de la hostilidad del conformismo): recetario de Leonora Carrington.
+        </h5>
+        <h6>
+          Si te gustan la comida y la magia puedes conseguirlo <strong><u><a
+                href="https://casadelibrosabiertos.uam.mx/gpd-cocina-alquimica-o-como-salvarse-de-la-hostilidad-del-conformismo-recetario-de-leonora-carrington-la.html"
+                class="modalTerminos">aquí.</a></u></strong>
+        </h6>
+      </div>
+
+
+  </section>
+  <!-- Slide 6.2: Recetario -->
+
+  <!-- Slide 6.3: Recetario -->
+  <section class="slide6">
+    <div class="d-flex">
+      <div class="col-lg-2 col-sm-6 container__question_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-patch-question"
+          viewBox="0 0 16 16" style=" fill: white; margin: 20px;">>
+          <path
+            d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+          <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+          <path class="rotated"
+            d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+        </svg>
+      </div>
+      <div class="col-lg-10 col-sm-6">
+        <h5>
+          ¿Quieres conocer más de las historias que guarda? <br>
+          Presentamos este mágico librito en los siguientes espacios.
+        </h5>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col col-lg-6 col-12" style="text-align:center; display: flex; align-items: center;">
+        <h2>Cocina, arte y alquimia eran para ella una misma experiencia. </h2>
+      </div>
+      <div class="col col-lg-6 col-12 text-center">
+        <img src="Imagenes/recetario/recetarioMain.svg" width="60%">
+      </div>
+  </section>
+  <!-- Slide 6.3: Recetario -->
+
+
+
+
+
+  <!-- Slide 7: Webapp -->
+  <section class="slide7">
+    <div>
+      <h5>Hacia el ocaso del sexto día, a seis manos entrelazamos lo que conocimos de la vida cotidiana de la
+        artista,
+        de nuestro visitanteobjetivo y de la experimentación. Siguiendo nuestra metodología de desarrollo, obtuvimos
+        el sistema de museografía interactiva para la CELC.</h5>
+    </div>
+    <div class="row" style="margin-top: 5%; display:flex; justify-content: space-evenly;">
+      <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_1.gif" style="margin-bottom: 5%">
+      <img class="col col-lg-2 col-6" src="Imagenes/webapp/Leonorapp_inicio.gif" style="margin-bottom: 5%">
+      <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
+      <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonorapp_cocina.gif" style="margin-bottom: 5%">
+      <img class="col col-lg-2 col-6" src="Imagenes/webapp/leonoapp_biblioteca.gif" style="margin-bottom: 5%">
+    </div>
+
+  </section>
+  <!-- Slide 7: Webapp -->
+
+  <!-- Slide 8: ICR -->
+  <section class="slide8">
+    <div class="row">
+      <div class="col col-lg-3 col-12">
+        <h5>Todo esté viaje lo plasmamos en nuestra idónea comunicación de resultados, un libro mágico con el cual
+          participamos en el Premio Mexicano del Diseño y ganó una mención honorífica en la categoría de mejor tesis
+          de maestría.
+          <br> <br>
+          Si tienes curiosidad puedes leerlo aquí
+        </h5>
+      </div>
+      <div class="col col-lg-3 col-12">
+        <img class="slide8__img" src="Imagenes/icrPremio.png">
+      </div>
+      <div class="col col-lg-6 col-12" style="margin-bottom: 10%;">
+        <a class="modalTerminos" style="text-decoration: none;"
+          href="https://www.yumpu.com/es/document/view/65859459/alquimia-tecnologia-y-vida-cotidiana-museografia-interactiva-para-la-casa-estudio-leonora-carrington"
+          title="Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington"
+          target="_blank">
+          Alquimia, tecnología y vida cotidiana: museografía interactiva para la Casa Estudio Leonora Carrington</a>
+        <!-- <iframe width="940px" height="737px" src="https://www.yumpu.com/es/embed/view/qWhicbn0GzmOP8UQ" frameborder="0" allowfullscreen="true"></iframe> -->
+        <div class='embed-container' data-page-width='494' data-page-height='640' id='ypembedcontainer'>
+          <iframe src="https://www.yumpu.com/es/embed/view/PHxAlJQgaefzkZhG" frameborder="0" allowfullscreen="true"
+            allowtransparency="true"></iframe>
+        </div>
+        <script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js'></script>
+      </div>
+
+      <!-- <footer">
           <img class="footer__image" src="Imagenes/monitas.svg" />
           </footer> -->
-      </section>
-      <!-- Slide 8: ICR -->
+  </section>
+  <!-- Slide 8: ICR -->
 
-      <!-- Slide 9: Presentaciones -->
-      <section class="slide9" style="margin-top: 10%;">
-        <div>
-          <h5>
-            Seguimos contando la historia de este trayecto interdisciplinario por el mundo de la artista en el VII
-            Congreso “Mujeres en la Ciencia, las Humanidades y todas las disciplinas” de la UAM y en el e-book
-            “EXPERIENCE
-            DESIGN Korea & Latin America Research Exchange”
-          </h5>
-        </div>
-        <div class="row slide9__container">
-          <div class="col col-lg-6 col-12 ">
-            <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones1" class="modalTerminos">
-              <img class="slide9__img" src="Imagenes/presentaciones/presentaciones1.svg">
+  <!-- Slide 9: Presentaciones -->
+  <section class="slide9">
+    <div>
+      <h5>
+        Seguimos contando la historia de este trayecto interdisciplinario por el mundo de la artista en el VII
+        Congreso “Mujeres en la Ciencia, las Humanidades y todas las disciplinas” de la UAM y en el e-book
+        “EXPERIENCE
+        DESIGN Korea & Latin America Research Exchange”
+      </h5>
+    </div>
+    <div class="row slide9__container">
+      <div class="col col-lg-6 col-12 ">
+        <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones1" class="modalTerminos">
+          <img class="slide9__img" src="Imagenes/presentaciones/presentaciones1.svg">
 
-            </a>
+        </a>
+      </div>
+      <div class="col col-lg-6 col-12 m-auto">
+        <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones2" class="modalTerminos">
+          <img class="slide9__img" src="Imagenes/presentaciones/presentaciones2.jpg">
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal presentación 1-->
+    <div class="modal fade" id="modalPresentaciones1" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #A14024;">
+            <h3 class="modal-title" id="exampleModalLabel">Mujeres en la Ciencia, las Humanidades y todas las
+              disciplinas.
+
+            </h3>
+            <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                class="bi bi-x-lg"></i></button>
           </div>
-          <div class="col col-lg-6 col-12">
-            <a data-bs-toggle="modal" data-bs-target="#modalPresentaciones2" class="modalTerminos">
-              <img class="slide9__img" src="Imagenes/presentaciones/presentaciones2.jpg">
-            </a>
-          </div>
-        </div>
+          <div class="modal-body row" style="background-color: #A14024;">
 
-        <!-- Modal presentación 1-->
-        <div class="modal fade" id="modalPresentaciones1" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #A14024;">
-                <h3 class="modal-title" id="exampleModalLabel">Mujeres en la Ciencia, las Humanidades y todas las
-                  disciplinas.
-
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body row" style="background-color: #A14024;">
-
-                <div class="col col-lg-4 col-12">
-                  <img src="Imagenes/presentaciones/presentaciones1.svg" class="slide8__img" alt="...">
-                </div>
-                <div class="col col-lg-8 col-12">
-                  <h5>
-                    En este el VII Congreso internacional, cuyo enfoque era la vida y educación en el contexto del
-                    COVID-19 presentamos en la mesa de arte y desarrollo de productos y servicios de diseño el
-                    artículo titulado “Leonorapp: Museografía interactiva en tiempos de COVID-19” </h5>
-                  <div style="display: flex;  justify-content: center;">
-                    <i class="bi bi-youtube"></i>&nbsp
-                    <h6>
-                      Puedes ver la presentación <strong><u><a href="https://www.youtube.com/watch?v=yE4H2CMtSos"
-                            class="modalTerminos">aquí</a></u></strong>
-                    </h6>
-                  </div>
-                </div>
+            <div class="col col-lg-4 col-12">
+              <img src="Imagenes/presentaciones/presentaciones1.svg" class="slide8__img" alt="...">
+            </div>
+            <div class="col col-xl-8 col-12">
+              <h5>
+                En este el VII Congreso internacional, cuyo enfoque era la vida y educación en el contexto del
+                COVID-19 presentamos en la mesa de arte y desarrollo de productos y servicios de diseño el
+                artículo titulado “Leonorapp: Museografía interactiva en tiempos de COVID-19” </h5>
+              <div style="display: flex;  justify-content: center;">
+                <i class="bi bi-youtube"></i>&nbsp
+                <h6>
+                  Puedes ver la presentación <strong><u><a href="https://www.youtube.com/watch?v=yE4H2CMtSos"
+                        class="modalTerminos">aquí</a></u></strong>
+                </h6>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal presentación 1-->
+      </div>
+    </div>
+    <!-- Modal presentación 1-->
 
-        <!-- Modal presentación 2-->
-        <div class="modal fade" id="modalPresentaciones2" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #A14024;">
-                <h3 class="modal-title" id="exampleModalLabel">EXPERIENCE DESIGN Korea & Latin America Research
-                  Exchange.
+    <!-- Modal presentación 2-->
+    <div class="modal fade" id="modalPresentaciones2" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #A14024;">
+            <h3 class="modal-title" id="exampleModalLabel">EXPERIENCE DESIGN Korea & Latin America Research
+              Exchange.
 
-                </h3>
-                <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
-                    class="bi bi-x-lg"></i></button>
-              </div>
-              <div class="modal-body row" style="background-color: #A14024;">
+            </h3>
+            <button type="button" class="btn-x" data-bs-dismiss="modal" aria-label="Close" style="color: white;"><i
+                class="bi bi-x-lg"></i></button>
+          </div>
+          <div class="modal-body row" style="background-color: #A14024;">
 
-                <div class="col col-lg-4 col-12">
-                  <img src="Imagenes/presentaciones/presentaciones2.jpg" class="slide8__img" alt="...">
-                </div>
-                <div class="col col-lg-8 col-12">
-                  <h5>
-                    En este libro interdiciplinario editado por la universidad de Kookmin participamos en el capítulo 3:
-                    Experiencias interactivas. Nuestro artículo titulado “Alchemy, technology and quotidian life:
-                    interactive museography for the Leonora Carrington House Studio”.
-                  </h5>
-                  <div style="display: flex; justify-content: center;">
-                    <i class="bi bi-book"></i> &nbsp<h6>
-                      Puedes leerlo gratis <strong><u><a
-                            href="https://play.google.com/store/books/details/Younghwan_Pan_EXPERIENCE_DESIGN_Korea_Latin_Americ?id=F3tREAAAQBAJ"
-                            class="modalTerminos">aquí</a></u></strong>
-                    </h6>
-                  </div>
-                </div>
+            <div class="col col-lg-4 col-12">
+              <img src="Imagenes/presentaciones/presentaciones2.jpg" class="slide8__img" alt="...">
+            </div>
+            <div class="col col-lg-8 col-12">
+              <h5>
+                En este libro interdiciplinario editado por la universidad de Kookmin participamos en el capítulo 3:
+                Experiencias interactivas. Nuestro artículo titulado “Alchemy, technology and quotidian life:
+                interactive museography for the Leonora Carrington House Studio”.
+              </h5>
+              <div style="display: flex; justify-content: center;">
+                <i class="bi bi-book"></i> &nbsp<h6>
+                  Puedes leerlo gratis <strong><u><a
+                        href="https://play.google.com/store/books/details/Younghwan_Pan_EXPERIENCE_DESIGN_Korea_Latin_Americ?id=F3tREAAAQBAJ"
+                        class="modalTerminos">aquí</a></u></strong>
+                </h6>
               </div>
             </div>
           </div>
         </div>
-        <!-- Modal presentación 2-->
+      </div>
+    </div>
+    <!-- Modal presentación 2-->
 
-      </section>
-      <!-- Slide 9: Presentaciones -->
+  </section>
+  <!-- Slide 9: Presentaciones -->
 
-      <!-- Slide 10: Conclusión -->
-      <section class="slide10 row" style="margin-top: 10%;">
+  <!-- Slide 10: Conclusión -->
+  <section class="slide10 row">
 
 
-        <div class="slide2__img col col-12 col-lg-4">
-          <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
-        </div>
-        <div class="slide2__texto col col-12 col-lg-8">
-          <h4>
-            La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
-            Carrington todavía nos acompañan.
-          </h4>
-        </div>
-      </section>
-      <!-- Slide 10: Conclusión -->
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10: Conclusión -->
+
+
+  <!-- Slide 10.1: Conclusión -->
+  <section class="slide10 row">
+
+
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10.1: Conclusión -->
+
+  <!-- Slide 10.2: Conclusión -->
+  <section class="slide10 row">
+
+
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10.2: Conclusión -->
+
+  <!-- Slide 10.3: Conclusión -->
+  <section class="slide10 row">
+
+
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10.3: Conclusión -->
+
+  <!-- Slide 10.4: Conclusión -->
+  <section class="slide10 row">
+
+
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10.4: Conclusión -->
+
+  <!-- Slide 10.5: Conclusión -->
+  <section class="slide10 row">
+
+
+    <div class="slide2__img col col-12 col-lg-4">
+      <img src="Imagenes/palmista.svg" style=" width: -webkit-fill-available" />
+    </div>
+    <div class="slide2__texto col col-12 col-lg-8">
+      <h4>
+        La transformación es perenne, nuestros caminos siguen entretejidos y las criaturas mágicas de Leonora
+        Carrington todavía nos acompañan.
+      </h4>
+    </div>
+  </section>
+  <!-- Slide 10.5: Conclusión -->
+
+
+
+
   </div>
   <!-- <footer">
         <img class="footer__image" src="Imagenes/monitas.svg" />

@@ -4,6 +4,9 @@
         margin: auto; 
         padding: 5%;
     }
+    section {
+        scroll-snap-align: start !important;
+    }
 
 .slide2__img{
  padding: 5%;
@@ -12,5 +15,11 @@
     padding-bottom: 5%;
     width: 80%;
 }
+
+.slide5{
+    display: flow-root;
+}
+
+
 
 }
