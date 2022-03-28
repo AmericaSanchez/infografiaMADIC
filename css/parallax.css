@@ -143,9 +143,3 @@ section:nth-child(20n) {
 section:nth-child(21n) {
 	background-image: linear-gradient(to bottom, #B4742A 80% , #B4742A 100%);
 }
-section:nth-child(22n) {
-	background-image: linear-gradient(to bottom, #B4742A 80% , #B4742A 100%);
-}
-section:nth-child(23n) {
-	background-image: linear-gradient(to bottom, #B4742A 80% , #B4742A 100%);
-}

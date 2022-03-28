@@ -20,6 +20,46 @@
     display: flow-root;
 }
 
+.polaroids{
+    width: 100%;
+    
+    }
 
+
+    .slide2{
+        flex-direction: column;
+    } 
+    
+    .slide10{
+        flex-direction: column !important;
+    } 
+    .slide6__img{
+        width: 90%;
+        }
+
+        .slide62__texto{
+            margin-top: 10%;
+        }
+
+.slide63__container{
+margin-top: 15% !important;
+}
+
+.col-invisible{
+    display: none;
+}
+.slide10__texto{
+    margin-top: 10%;
+
+}
+
+.slide10__img{
+    width: 90%;
+}
+.slide10__logos{
+    margin-top: 10% !important;
+}
+.slide101__texto{
+    margin-top: 30% !important;}
 
 }

@@ -74,16 +74,6 @@ a{
     text-decoration: none !important;
 }
 
-.footer{
-display: flex;
-align-items: flex-end;
-justify-content: center;
-padding: 5%;
-}
-
-.footer__image{
-width: 100px;
-}
 
 .infografia{
 
@@ -120,10 +110,6 @@ width: 100px;
     display: flex;
 }
 
-.slide1__texto{
-margin-top: 5%;
-}
-
 .slide2__texto{
 display: flex;
 align-items: center;
@@ -143,6 +129,7 @@ align-items: center;
        -moz-user-select: none;
         -ms-user-select: none;
 }
+
 
 .modal-dialog{
     position: relative;
@@ -200,9 +187,7 @@ align-items: center;
 }
 
 .modal-backdrop.show {
-   
     height: -webkit-fill-available !important;
-
 }
 
 .viaje__bt{
@@ -212,6 +197,19 @@ margin: 5% 0 5% 0;
 .slide5{
     display: flex;
 }
+
+.polaroids{
+width: 80%;
+}
+
+.slide10__img{
+    width: 30%;
+}
+
+.slide6__img{
+width: 60%;
+}
+
 
 *{
 font-family: 'Raleway', sans-serif;
